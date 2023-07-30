@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* .exper{
+            height: 330px;
+            width: 400px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black;
+            margin: 300px;
+
+            animation-name: temp;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes temp{
+            from{
+                transform: rotate(0);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        } */
+
+        .container{
+            height: 300px;
+            width: 300px;
+            margin: 50px;
+            background-color: aquamarine;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black;
+            
+           
+            animation-name: rotate;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            border-radius: 50%;
+        }
+
+        @keyframes rotate{
+            from{
+                transform: rotate(0);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: cadetblue;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 50%;
+            /* animation-name: move; */
+            animation-name: move2;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            position: relative;
+        }
+
+        @keyframes move{
+            
+          0%{  
+                top: 0px;
+                left: 0px;
+            }
+        
+        25%{
+            
+                top: 0px;
+                left: 242px;
+           
+         }
+         50%{
+            top: 242px;
+            left: 242px;
+         } 
+         75%{
+            top: 245px;
+            left: 0px;
+         }
+         100%{
+            top: 0px;
+            left: 0px;
+         }
+        }
+
+        @keyframes move2{
+            from{
+                transform: rotate(0);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+        .loaders{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .dot{
+            width: 20px;
+            height: 20px;
+            background-color: rgb(41, 219, 225);
+            border-width: 1px;
+            border-style: double;
+            border-color: black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+
+        </div>
+</div>
+
+<div class="loaders">
+    <div class="dots" id="1"></div>
+    <div class="dots" id="2"></div>
+    <div class="dots" id="3"></div>
+    <div class="dots" id="4"></div>
+</div>
+</body>
+</html> 

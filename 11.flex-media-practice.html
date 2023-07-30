@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .maincontainer{
+            background-color: aliceblue;
+            margin-left: 200px;
+            height: 900px;
+            width: 900px;
+            border-color: black;
+            border-width: 5px;
+            border-style: solid;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .subcont1{
+            background-color: #b8daf9; 
+            height: 300px;
+            width: 300px; 
+            border-color: black;
+            border-width: 3px;
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .subcont2{
+            background-color: #b8daf9; 
+            height: 300px;
+            width: 300px; 
+            border-color: black;
+            border-width: 3px;
+            border-style: solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text{
+            background-color: blue;
+            color: white;
+            padding: 5px;
+            margin: 5px;
+            height: 100px;
+            width: 100px;
+            border-color: black;
+            border-width: 3px;
+            border-style: solid;
+            box-sizing: border-box;
+
+        }
+
+        @media (min-width: 100px) and (max-width: 400px)
+        {
+            .maincontainer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+            }
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="subcont1">
+            <p class="text" id="p1"> text 1 </p>
+            <p class="text" id="p2"> text 2</p>
+        </div>
+        <div class="subcont2">
+            <img class="img" src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" alt="pic" height="200px" width="200px">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITION PROPERTY</title>
+
+<style>
+    img{
+        margin: 15px;
+    }
+
+    .container{
+        height: 3000px;
+        background: #e9dfdf;
+    }
+    .container2{
+        height: 2000px;
+        background: #e88585;
+    }
+    div{
+        border-style: solid;
+        border-color: black;
+        border-width: 2px; 
+
+    }
+
+    .img1{
+        position: relative;
+        top: 55px;
+        /* uper se img1 35 px niche ajegi */
+        left: 65px;
+        /* left se img1 65 px side hojegi chahe vo overlap ku na krje */
+        /* ye apni original position ke relative kam kr rha hoga */
+    }
+
+    .img2{
+     position: absolute; 
+     /* iske pas wali right wali image iske uper ajegi iski jagah pe kuki iski jagah khali hojegi  */
+     top: 10px; 
+     right: 50px;
+     /*ab ye sb work krega iske closest incestor ke relative jo ki yaha pe div hai */
+
+    }
+
+    .img3{
+        position: relative;
+        top: 55px;
+        right: 65px;
+    }
+
+    .img4{
+        position: fixed;
+    }
+
+    .img5{
+        position: sticky; 
+        top: 1000px;
+    }
+
+</style> 
+
+</head>
+<body>
+    <!-- different position properties available -->
+    <!-- static -->
+    <!-- relative -->
+    <!-- absolute -->
+    <!-- fixed -->
+    <!-- sticky -->
+    <div class="container">
+
+        <img src="https://images.ctfassets.net/lzny33ho1g45/5RVWTocIS5gifWznEG9adU/63d6bceb076f24b19c51ec9551c8198d/Best_no-code_app_builders.jpg?w=1520&fm=jpg&q=30&fit=thumb&h=760" alt="coding image" width="300px" height="200px" class="img1">
+
+        <img src="https://c4.wallpaperflare.com/wallpaper/923/289/124/java-programmer-coder-by-pcbots-wallpaper-preview.jpg" alt="coding image" width="300px" height="200px" class="img2">
+
+        <img src="https://www.pcworld.com/wp-content/uploads/2023/06/Pic-2.jpg?quality=50&strip=all" alt="laptop image" width="300px" height="200px" class="img3">
+
+        <img src="https://cdn-developer-wp.arc.dev/wp-content/uploads/2022/06/coding-programming-project-ideas-1128x635.jpg" alt="bv" class="img4" height="200px" width="300px">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT57qFCg3qOImY00u9aNPVoumyE7zSyYE6sUg&usqp=CAU" alt="jj" class="img5" height="200px" width="250px">
+
+    </div>
+
+    <div class="container2"></div> 
+</body>
+</html>

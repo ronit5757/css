@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display properties</title>
+    <style>
+        div{
+            background: #000000cb;
+            color: white;
+            border-style: solid;
+            border-color: red;
+            border-width: 3px;
+            margin: 10px;
+            padding: 5px;
+            width: 400px;
+            height: 100px;
+            /* display: inline; */
+        }
+
+span{
+    background: #3c00ffd9;
+    color: aliceblue;
+    font-size: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-style: solid;
+    border-color: black;
+    margin: 7px;
+    padding: 2px;
+    /* display: inline-block; */
+
+}
+
+    </style>
+</head>
+<body>
+    <!-- WE HAVE BLOCK ELEMENTS WHICH INCLUDE div, p, h1, ol, ul, dl, article, section -->
+    <!-- (1)THEY TAKE SPACE FROM EXTREME LEFT TO EXTREME RIGHT of web page -->
+    <!-- THEY GET DISPLAYED ON NEXT LINE -->
+    <!-- WE CAN ADD CUSTOM WIDTH AND HEIGHT -->
+    <!-- WE CAN ALSO ADD CUTOM MARGIN AND PADDING -->
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolorum quas culpa natus expedita, illum tempore tempora dolorem voluptas quibusdam?
+    </div>
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore beatae voluptate?
+    </div>
+
+    <!-- WE HAVE INLINE ELEMENTS WHICH INCLUDE B, A, SPAN,I -->
+    <!-- THEY TRY TO GET DISPLAYED IN SAME LINE NEXT TO NEXT -->
+    <!-- THEY TAKE SPACE ACCR TO THE CONTENT SIZE -->
+    <!-- WE CANT DO CUSTOM HEIGHT AND WIDTH -->
+    <!-- WE CAN DO CUSTOM MARGIN (onl for left and right) AND PADDING -->
+    <!-- BT USING DISPLAY : BLOCK WE CAN MAKE INLINERS AS BLOCK ELEMNTS -->
+    <span>
+        INLINE 1
+    </span>
+
+    <span>
+        INLINE 2
+    </span>
+    <span>
+        INLINE 3
+    </span>
+</body>
+</html>

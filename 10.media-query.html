@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA-QUERY</title>
+
+    <style>
+        .box{
+            margin: 5px;
+            padding: 3px;
+            height: 800px;
+            width: 800px;
+            display: flex;
+            flex-direction: rowS;
+            justify-content: center;
+            background-color: aliceblue;
+            border-style: solid;
+            border-width: 5px;
+            border-color: black;
+
+        }
+        .boxi{
+            margin: 5px;
+            padding: 5px;
+            height: 100px;
+            width: 100px;
+            
+        }
+
+        #id1{
+            background: blueviolet;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            margin: 2px;
+            padding: 2px;
+
+        }
+
+        #id2{
+            background: rgb(247, 55, 37);
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        #id3{
+            background: rgb(211, 226, 43);
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            margin: 2px;
+            padding: 2px; 
+        }
+
+        #id4{
+            background: rgb(55, 226, 43); 
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            margin: 2px;
+            padding: 2px;
+        }
+        @media (min-width: 200px) and (max-width: 600px)
+        {
+            .box{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            } 
+           
+        } 
+
+        @media (min-width: 200px) and (max-width: 600px)
+        {
+            .box{
+                background-color: beige;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+    
+    <div class="boxi" id="id1">BOX1 </div>
+    <div class="boxi" id="id2">BOX2 </div>
+    <div class="boxi" id="id3">BOX3 </div>
+    <div class="boxi" id="id4">BOX4 </div>
+id
+</div>
+</body>
+</html>

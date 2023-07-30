@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>size units</title>
+
+<style>
+
+.parent{
+    background: #000;
+    border-style: dotted;
+    border-color: blue;
+    border-width: 2px;
+    width: 50%;
+}
+
+.child{
+    background: #ffb300cb;
+    width: 50%;
+    padding-left: 25%;
+    /* parent is taking 50% width of body so child will takle 50 % of 50% */
+    box-sizing: border-box;
+}
+/* 5em means child font ka size parent ke defined font size ka 5 time hojega */
+/* 1px = 1/96 inch or 0.26 inch */
+/* default font size is 16px */
+/* 5rem means root element example html tag k size ka 5 times jo ke hoga 5x16=80 pxs */
+/* 50%vh means poore port ki height ka 50 percent */
+/* vw me port ki width hojegi */
+</style>
+
+</head>
+<body>
+
+<!-- the percentage works for the relative to the previous ancestor  -->
+
+    <div class="parent">
+        <div class="child">
+            hey this is ronit
+            <!-- here child has closest ancestor in which it is enclosed as parent -->
+        </div>
+    </div>
+</body>
+</html>

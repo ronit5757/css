@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border-color: black;
+            border-width: 5px;
+            border-style: solid;
+            height: 100vh;
+            width: 100vw;
+            background-color: antiquewhite;
+        }
+
+        .box{
+            background-color: blue;
+            width: 200px;
+            height: 70px;
+            border-color: yellow;
+            border-width: 4px;
+            border-style: solid;
+            border-radius: 13px;
+            margin: 10px;
+
+            position: relative;
+            animation-name: rightmove;
+            animation-duration: 3s; 
+            animation-delay: 2s;
+            animation-iteration-count: 8;
+            animation-timing-function: ease-in-out;
+            /* animation-timing-function: cubic-bezier(0, -1, 0.7, -1); */
+            animation-direction: alternate; 
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes rightmove{
+            from{
+                top: 0;
+               
+                left: 0;
+            }
+            to{
+                top: 0;
+                
+                left: 1000px; 
+            }
+
+        }
+
+        #box2{
+            height: 10px;
+            width: 100px;
+            /* background-color: brown; */
+            margin: 10px;
+
+            position: relative;
+            animation-name: move2;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: 8;
+            animation-fill-mode: forwards;
+
+        }
+
+        @keyframes move2{
+            from{
+                top: 500px;
+                left: 0px;
+            }
+            to{
+                top: 500px;
+                left: 1000px;
+
+
+            }
+        }
+
+        #circle{
+            background-color: rgb(79, 19, 19);
+            height: 100px;
+            width: 100px;
+            top: 50%;
+            left: 670px;
+            border-width: 1px;
+            border-color: brown;
+            border-style: solid;
+            border-radius: 50px;
+            position: relative;
+
+            animation-name: move3;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        @keyframes move3{
+            0%{
+                top: 20%;
+                left: 5%;
+            }
+            30%{
+                top: 20%;
+                left: 70%;
+            }
+            60%{
+                top: 70%;
+                left: 70%;
+            }
+            100%{
+                top: 70%;
+                left: 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="circle">
+
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div id="box2">
+            lorem 
+        </div>
+    </div>
+</body>
+</html>

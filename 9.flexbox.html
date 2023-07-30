@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            background: rgb(239, 239, 204);
+            border-style: solid;
+            border-width: 5px;
+            border-color: black;
+            margin: 2px;
+            padding: 2px;
+            height: 500px;
+            /* HUM ISKO FLEX CONTAINER BNADEGE OR SARE BOXES HOJEGE FLEX ITEMS OR DEFAULT DIRECTION FLEXBOX KI HOTI HAI ROW */
+            display: flex;
+            /* ab boxes ek row me ajege */
+            flex-direction: row;
+            /* ab boxes apna size maintain rkhege chahe screen chhoti hoje */
+            /* flex-wrap: wrap;  */
+            /* flex flow = direction and wrapping aise b kr skte hai*/
+            /* flex-flow: row-reverse wrap; */
+
+            /* direction-- row -- main axis = horizontal */
+            /* direction-- column-- main axis = row */
+            /* justify-content hmara work krta hai main axis ke along jo humne di hoti h ya jo default hoti h or spaces bhi de deta h*/
+
+            justify-content: center;
+
+            /* align-items work krta hai cross axis yaani ke vertical axis k along  position deti hai*/
+            align-items: center;
+            /* AGAR HEIGHT MENTION NAHI KREGE APNE BOXES KI TOH HMARE ALIGN-ITEMS : STRECH STECH HOJEGE PURI VERTICAL AXIS PE  */
+
+        }
+
+        .box{
+            height: 100px; 
+            width: 100px;
+        }
+
+        #box1{
+            background-color: blue;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            margin: 2px;
+            padding: 2px;
+        }
+        #box2{
+            background-color: aqua;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            margin: 2px;
+            padding: 2px; 
+            /* order: 500;   is se mera yre box sbse last me chla jaega */
+            flex-shrink: 5;
+            /* ab ye 5x speed se shrink hoga bakio k comparision m */
+            /* flex-grow: 7; is se ye grow hoega 7x speed me  */
+            /* align-self: flex-end; */
+            /* ye ek item ko align krdega cross axis k along */
+
+        }
+        #box3{
+            background-color: yellow;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            margin: 2px;
+            padding: 2px;
+        }
+        #box4{
+            background-color: brown;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        /* FLEX CONTAINER---> display, direction, flex wrap, justify-content, align items */
+        /* FLEX ITEMS---> shirnk, grow, order, align-self */
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+
+    </div>
+</body>
+</html>
